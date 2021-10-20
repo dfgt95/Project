@@ -17,6 +17,7 @@ def draw_trigon(color, NUM_TRIGON):
     t2 = Trigon(pos, color, NUM_TRIGON)
     if NUM_TRIGON != 0: gfw.world.remove(t1)
     gfw.world.add(gfw.layer.Trigon, t2)
+    print(pos)
     NUM_TRIGON += 1
 
 def color():

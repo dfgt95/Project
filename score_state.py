@@ -10,15 +10,16 @@ def enter():
     bg.init()
     gfw.world.add(gfw.layer.bg, bg)
     
-    #global font
-    #font = gfw.font.load('res/ConsolaMalgun.ttf', 30)
+    global font
+    font = gfw.font.load('res/ConsolaMalgun.ttf', 30)
 
 def update():
     gfw.world.add(gfw.layer.ui, highscore)
 
 def draw():
     gfw.world.draw()
-
+    score_pos = 20, get_canvas_height() - 30
+    font.draw(*score_pos, 'Test Message', (255,255,255))
 def handle_event(e):
     if e.type == SDL_QUIT:
         gfw.quit()

@@ -42,6 +42,6 @@ class Trigon:
         if color == 0:
             self.image.rotate_draw(-math.radians(120), x, y-15, 150, 150)
         elif color == 1:
-            self.image.rotate_draw(0, x-6, y, 150, 150)
+            self.image.rotate_draw(0, x-7, y, 150, 150)
         else:
             self.image.rotate_draw(math.radians(120), x-16, y-14, 150, 150)
